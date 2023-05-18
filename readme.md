@@ -1,0 +1,11 @@
+# ESERCIZIO
+
+### Title: php-badwords
+---
+**ALUNNO:** FEDERICO AIROLDI
+
+**DATA:** 18 MAGGIO 2023
+
+**STATO DELL'ESERCIZIO:** CONCLUSO
+
+_Boolean Classe #93_
