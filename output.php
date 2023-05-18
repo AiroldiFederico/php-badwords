@@ -1,9 +1,19 @@
 <?php
 
+//prendo il valore del parametro
 $phraseparam = $_GET['phrase'];
+
+// Dichiarazione dell'array di parole da censurare
+$parolaCensurata = $_GET['censoredword'];
+
+
+// Sostituisci la parola da censurare con tre asterischi
+$paragrafoCensurato = str_ireplace($parolaCensurata, '***', $phraseparam);
+
 
 
 ?>
+
 
 
 
@@ -44,9 +54,28 @@ $phraseparam = $_GET['phrase'];
 
     <body>
 
-        <main class="col-4 m-auto p-4">
+        <main class="col-8 m-auto mt-4">
+
+            <div class="mb-2">stampare a schermo il paragrafo e la sua lunghezza</div>
             
-            <h2>Output: <?php echo $phraseparam ?></h2>
+            <h4>
+                <?php
+                echo "<p>Frase: " . $phraseparam . "</p>";
+                echo "<p>Lunghezza: " . strlen($phraseparam) . "</p>"; 
+
+                ?>
+            </h4>
+
+            <div class="mt-4 mb-2">stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare</div>
+
+            <h4>
+                <?php
+                echo "<p>Frase: " . $paragrafoCensurato . "</p>";
+                echo "<p>Lunghezza: " . strlen($paragrafoCensurato) . "</p>"
+
+                ?>
+            </h4>
+
             
         </main>
 

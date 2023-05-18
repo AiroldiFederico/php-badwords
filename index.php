@@ -46,9 +46,15 @@
             <form class="col-4 m-auto p-4" action="output.php" method="GET">
 
                 <div class="mb-3">
+                    <!-- text input -->
                     <label for="text" class="form-label">INSERT TEXT HERE</label>
                     <input type="text" class="form-control" id="text" aria-describedby="text" name="phrase">
                     <div id="TextHelp" class="form-text">Bad words will be censored</div>
+
+                    <!-- censor input -->
+                    <label for="text" class="form-label mt-4">INSERT TEXT HERE</label>
+                    <input type="text" class="form-control" id="text2" aria-describedby="text" name="censoredword">
+                    <div id="CensHelp" class="form-text">What word should I censor?</div>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
