@@ -1,15 +1,17 @@
 <?php
 
-//registro il parametro
-// $phraseparam = $_GET['phrase'];
+$phraseparam = $_GET['phrase'];
+
 
 ?>
+
+
 
 <!doctype html>
 <html lang="en">
     <head>
 
-        <title>PHP BADWORDS</title>
+        <title>PHP OUTPUT</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,17 +44,10 @@
 
     <body>
 
-        <main>
-            <form class="col-4 m-auto p-4" action="output.php" method="GET">
-
-                <div class="mb-3">
-                    <label for="text" class="form-label">INSERT TEXT HERE</label>
-                    <input type="text" class="form-control" id="text" aria-describedby="text" name="phrase">
-                    <div id="TextHelp" class="form-text">Bad words will be censored</div>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+        <main class="col-4 m-auto p-4">
+            
+            <h2>Output: <?php echo $phraseparam ?></h2>
+            
         </main>
 
     </body>
